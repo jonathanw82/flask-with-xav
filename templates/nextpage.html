@@ -1,8 +1,23 @@
 {%  extends 'base.html' %}
+
+{% block title%}
+Next page
+
+{%endblock%}
+
+
 {% block content %}
 
 
 <h2>{{ page_title }}</h2>
-
+<h1>Members</h1>
+<ul>
+{% for word in mylist %}
+  <li>{{ word }}</li>
+ {% if word == "world"%}
+ <p>This is the word</p>
+ {% endif %}
+{% endfor %}
+</ul>
 
 {% endblock %}   

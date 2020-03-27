@@ -11,7 +11,8 @@ def index():
 
 @app.route("/nextpage") 
 def nextpage():
-    return render_template("nextpage.html", page_title="Next Page")
+    mylist =["hello","world"]
+    return render_template("nextpage.html", page_title="Next Page", mylist=mylist)
 
 
 if __name__ == "__main__":
